@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const MyContext = React.createContext();
+const MyContext = React.createContext("MyContext");
 
 class MyProvider extends React.Component {
     state = {
@@ -12,7 +12,8 @@ class MyProvider extends React.Component {
 
     action = {
         increaseAge: () => { this.setState({ age: this.state.age + 1 }); },
-        changeName : (text) => {this.setState({name:text});}
+        changeName : (text) => {this.setState({name:text});},
+        changeGender: () => {this.setState({isMale: !this.state.isMale});}
     }
 
     render() {
@@ -27,14 +28,16 @@ class MyProvider extends React.Component {
     }
 }
 
-function warpperContext(_Item) {
-    return function sample(props) {
+function warpperContext(_Item) {//consumer Component
+    return function sample(props) {//comsumer Component의 *****props 값       
         return (
             <MyContext.Consumer>
                 {
                     (context) => (
                         <_Item
+                            {...props}
                             context={context}
+                            
                         />
                     )
                 }

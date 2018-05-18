@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { warpperContext } from '../context/MyContext'
+import { warpperContext } from '../context/MyContext';
+import Style from './css/Pannel.css';
 
 const propTypes = {
 }
@@ -12,7 +13,7 @@ class InputPannel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            textValue: ''
+            textValue: props.initailName ? props.initailName : ''
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -40,7 +41,7 @@ class InputPannel extends Component {
 
     render() {
         return (
-            <div>
+            <div className="InputPannel">
                 <button
                     onClick={() => this.props.context.action.increaseAge()} >나이추가
                 </button>

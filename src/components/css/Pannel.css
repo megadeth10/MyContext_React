@@ -1,0 +1,16 @@
+.DisplayPannelBody {
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.InputPannel {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.ExtraPannel {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid aqua
+}
