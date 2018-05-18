@@ -4,6 +4,7 @@ import {warpperContext} from '../context/MyContext'
 
 class DisplayPannel extends React.Component {
     render() {
+        ///ㄴ머ㅏㅇ리마오ㅓ라
         return (
             <div>
                  I'm {this.props.context.state.name}
