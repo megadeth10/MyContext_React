@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Person from './Person'
 import {warpperContext} from '../context/MyContext'
 
 class DisplayPannel extends React.Component {
