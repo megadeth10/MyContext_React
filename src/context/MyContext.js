@@ -11,7 +11,8 @@ class MyProvider extends React.Component {
     }
 
     action = {
-        increaseAge: () => { this.setState({ age: this.state.age + 1 }); }
+        increaseAge: () => { this.setState({ age: this.state.age + 1 }); },
+        changeName : (text) => {this.setState({name:text});}
     }
 
     render() {
