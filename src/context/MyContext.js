@@ -43,4 +43,4 @@ function warpperContext(_Item) {
     }
 }
 
-export { MyContext, MyProvider, warpperContext };
+export {MyProvider, warpperContext};

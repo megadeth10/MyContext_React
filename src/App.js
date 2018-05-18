@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DisplayPannel from './components/DisplayPannel'
-import {MyContext, MyProvider, warpperContext} from './context/MyContext'
+import DisplayPannel from './components/DisplayPannel';
+import InputPannel from './components/InputPannel';
+import {MyProvider} from './context/MyContext';
 
 const propTypes = {
 }
@@ -18,6 +19,7 @@ class App extends Component {
       <MyProvider>
         이러쿵 저러쿵
         <DisplayPannel />
+        <InputPannel />
       </MyProvider>
     )
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {MyContext, MyProvider, warpperContext} from '../context/MyContext'
+import { warpperContext} from '../context/MyContext'
 
 class Person extends React.Component {
   constructor(props) {
@@ -8,19 +8,12 @@ class Person extends React.Component {
   }
   render() {
     return (
-      <MyContext.Consumer>
-        {
-          (context) => (
-            <div> I'm {context.state.name}
-              I'm {context.state.age}
-              <button onClick={() => context.action.increaseAge()} > + </button>
+            <div> I'm {this.props.context.state.name}
+              I'm {this.props.context.state.age}
+              <button onClick={() => this.props.context.action.increaseAge()} > + </button>
             </div>
-          )
-        }
-      </MyContext.Consumer>
-
     );
   }
 }
 
-export default Person;
+export default warpperContext(Person);
