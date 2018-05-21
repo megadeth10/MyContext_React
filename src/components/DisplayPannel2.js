@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { wapperComponent } from '../context/SecondContext';
+import { wapperSecondContext } from '../context/SecondContext';
 
 const propTypes = {
 }
@@ -76,4 +76,4 @@ class DisplayPannel2 extends Component {
 DisplayPannel2.defaultProps = defaultProps;
 DisplayPannel2.propTypes = propTypes;
 
-export default wapperComponent(DisplayPannel2);
+export default wapperSecondContext(DisplayPannel2);

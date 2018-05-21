@@ -28,7 +28,7 @@ class MyProvider extends React.Component {
     }
 }
 
-function warpperContext(_Item) {//consumer Component
+function warpperMyContext(_Item) {//consumer Component
     return function sample(props) {//comsumer Component의 *****props 값       
         return (
             <MyContext.Consumer>
@@ -46,4 +46,4 @@ function warpperContext(_Item) {//consumer Component
     }
 }
 
-export {MyProvider, warpperContext};
+export {MyProvider, warpperMyContext};

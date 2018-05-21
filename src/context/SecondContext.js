@@ -32,7 +32,7 @@ class SecondProvider extends Component {
     }
 };
 
-const wapperComponent = (Comp) => {
+const wapperSecondContext = (Comp) => {
     return function (prop) {
         return (
             <SecondContext.Consumer>
@@ -42,4 +42,4 @@ const wapperComponent = (Comp) => {
     }
 }
 
-export { SecondProvider, wapperComponent};
+export { SecondProvider, wapperSecondContext};

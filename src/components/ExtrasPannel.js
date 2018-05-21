@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/Pannel.css';
-import {warpperContext} from '../context/MyContext';
+import {warpperMyContext} from '../context/MyContext';
 
 const propTypes = {
 }
@@ -31,4 +31,4 @@ class ExtrasPannel extends Component {
 ExtrasPannel.defaultProps = defaultProps;
 ExtrasPannel.propTypes = propTypes;
 
-export default warpperContext(ExtrasPannel);
+export default warpperMyContext(ExtrasPannel);
